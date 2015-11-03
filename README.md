@@ -7,3 +7,7 @@
 
 
 ![Demo1](https://github.com/aiqiuqiu/ViewGuide/blob/master/Demo1.gif)
+
+![D2mo2](https://github.com/aiqiuqiu/ViewGuide/blob/master/Demo2.png)
+
+![D2mo2](https://github.com/aiqiuqiu/ViewGuide/blob/master/Demo3.png)
