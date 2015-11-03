@@ -21,20 +21,29 @@
 
 ## How To Usage  
 1.  将ViewGuide 拖进项目中即可 
-2.  Or     pod 'ViewGuide', '~> 1.0.0'
-3   关闭ViewGuide 
-> 在//  UIView+ViewGuide.h文件中 打开//#define  ViewGuideMarco 这个宏定义   或者在pch文件中 定义这个宏
-## Knows Issue  
 
+2.  Or     pod 'ViewGuide', '~> 1.0.0'
+
+3.  关闭ViewGuide 
+
+
+> 在//  UIView+ViewGuide.h文件中 打开//#define  ViewGuideMarco 这个宏定义   或者在pch文件中 定义这个宏
+
+----
+
+
+
+## Knows Issue  
+>
 1 此Debug工具支持StoryBoard 实时渲染  ，如果项目中 StoryBoard 或者nib文件较多 ，造成卡顿 可注释  UIView+ViewGuide.h文件中 IB_DESIGNABLE 这个编译器指令
 
-2 如果你的控制器实现了这个方法 
+> 2 如果你的控制器实现了这个方法 
           - (void)viewDidLayoutSubviews {
             [super viewDidLayoutSubviews];
           }
           
           
-  请一定调用Super 的实现  因为这个方法在UIViewController实习为空  所以无法用runtime  hook到
+> 请一定调用super的实现.  因为这个方法在UIViewController实现为空，所以无法用Runtime的黑魔法hook到
 
 
 
