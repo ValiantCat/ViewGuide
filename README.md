@@ -16,13 +16,13 @@
 
 但是发现该大牛已经不再更新了  而且这个库在 AutoLayout的情况下 支持并不是很好  所以我就重构了一下
 
-#warning  过两天我会吧期中踩过的坑和原理总结一下 放在我的[简书](http://www.jianshu.com/users/cc1e4faec5f7/)
+#warning  过两天我会把其中踩过的坑和原理总结一下 放在我的[简书](http://www.jianshu.com/users/cc1e4faec5f7/)
 
 
 ## How To Usage  
 1.  将ViewGuide 拖进项目中即可 
 
-2.  Or     pod 'ViewGuide', '~> 1.0.0'
+2.   pod 'ViewGuide', '~> 1.0.0'
 
 3.  关闭ViewGuide 
 
@@ -33,14 +33,17 @@
 
 
 
-## Knows Issue  
+## Knows Issues  
 >
 1 此Debug工具支持StoryBoard 实时渲染  ，如果项目中 StoryBoard 或者nib文件较多 ，造成卡顿 可注释  UIView+ViewGuide.h文件中 IB_DESIGNABLE 这个编译器指令
 
 > 2 如果你的控制器实现了这个方法 
-          - (void)viewDidLayoutSubviews {
-            [super viewDidLayoutSubviews];
-          }
+
+
+
+                    - (void)viewDidLayoutSubviews {
+                              [super viewDidLayoutSubviews];
+                    }
           
           
 > 请一定调用super的实现.  因为这个方法在UIViewController实现为空，所以无法用Runtime的黑魔法hook到
