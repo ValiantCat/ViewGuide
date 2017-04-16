@@ -26,7 +26,7 @@
 
 但是发现该大牛已经不再更新了  而且这个库在 AutoLayout的情况下 支持并不是很好  所以我就重构了一下
 
-#warning  过两天我会把其中踩过的坑和原理总结一下 放在我的[简书](http://www.jianshu.com/users/cc1e4faec5f7/)
+# warning  过两天我会把其中踩过的坑和原理总结一下 放在我的[简书](http://www.jianshu.com/users/cc1e4faec5f7/)
 
 
 ## How To Usage  
